@@ -38,9 +38,18 @@ Step 3 — GitHub Actions
 - • 3.7 Повторный запуск GitHub Actions завершился успешно.
 
 
-Step 4 — Trivy DefectDojo
+Step 4 — Trivy Filesystem и DefectDojo
 - • 4.1 Выполнено файловое сканирование проекта с помощью Trivy.
 - • 4.2 Отчет сохранен в формате JSON.
 - • 4.3 Создан Test типа Trivy Scan в DefectDojo.
-- • 4.4 Отчет Trivy успешно импортирован.
+- • 4.4 Отчет Trivy Filesystem успешно импортирован.
 - • 4.5 Проверено отображение найденных уязвимостей в DefectDojo.
+
+
+Step 5 — Trivy Image Scan
+- • 5.1 Выполнено сканирование Docker-образа DefectDojo.
+- • 5.2 Выполнен анализ уязвимостей Docker-образа.
+- • 5.3 Отчет сохранен в формате JSON.
+- • 5.4 Создан Test типа Trivy Scan в DefectDojo.
+- • 5.5 Отчет Trivy Image успешно импортирован.
+- • 5.6 Проверено отображение найденных уязвимостей контейнера в DefectDojo.
