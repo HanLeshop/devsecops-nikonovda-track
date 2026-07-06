@@ -28,3 +28,19 @@ Step 2 — SAST и импорт в DefectDojo
 - • 2.6 Проверено, что после перезапуска Docker Compose данные DefectDojo сохранились.
 
 
+Step 3 — GitHub Actions
+- • 3.1 Создан workflow `.github/workflows/security-pipeline.yml`.
+- • 3.2 Настроен автоматический запуск pipeline при push в ветку `main`.
+- • 3.3 В pipeline добавлены проверки Gitleaks, Semgrep и Trivy.
+- • 3.4 Выполнен первый тестовый запуск GitHub Actions.
+- • 3.5 Обнаружена проблема с `semgrep-action`.
+- • 3.6 Semgrep заменен на установку через `pip` и запуск через CLI.
+- • 3.7 Повторный запуск GitHub Actions завершился успешно.
+
+
+Step 4 — Trivy DefectDojo
+- • 4.1 Выполнено файловое сканирование проекта с помощью Trivy.
+- • 4.2 Отчет сохранен в формате JSON.
+- • 4.3 Создан Test типа Trivy Scan в DefectDojo.
+- • 4.4 Отчет Trivy успешно импортирован.
+- • 4.5 Проверено отображение найденных уязвимостей в DefectDojo.
