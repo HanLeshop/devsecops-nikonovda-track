@@ -20,10 +20,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Install Semgrep
+        run: |
+          python3 -m pip install semgrep
+
       - name: Semgrep
-        uses: semgrep/semgrep-action@v1
-        with:
-          config: p/ci
+        run: |
+          semgrep scan \
+            --config p/ci \
+            .
 
       - name: Trivy
         uses: aquasecurity/trivy-action@master
