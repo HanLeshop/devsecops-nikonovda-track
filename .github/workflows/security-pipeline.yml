@@ -38,3 +38,42 @@ jobs:
           format: table
           exit-code: 0
           ignore-unfixed: true
+
+
+      - name: DAST
+        working-directory: project/django-DefectDojo
+        run: |
+          docker compose up -d
+
+      - name: DAST in DefectDojo
+        run: |
+          for i in {1..30}; do
+            if curl -I http://localhost:8080 | grep -E "HTTP/1.1 200|HTTP/1.1 302"; then
+              echo "DefectDojo is available"
+              exit 0
+            fi
+            echo "Waiting for DefectDojo..."
+            sleep 10
+          done
+          echo "DefectDojo is not available"
+          docker ps
+          exit 1
+
+      - name: OWASP ZAP Baseline
+        run: |
+          mkdir -p reports/zap
+          docker run --rm \
+            --network host \
+            -v "$(pwd)/reports/zap:/zap/wrk" \
+            ghcr.io/zaproxy/zaproxy:stable \
+            zap-baseline.py \
+            -t http://localhost:8080 \
+            -r zap-baseline-report.html \
+            -J zap-baseline-report.json \
+            -x zap-baseline-report.xml || true
+
+      - name: Upload ZAP
+        uses: actions/upload-artifact@v4
+        with:
+          name: zap-reports
+          path: reports/zap/
