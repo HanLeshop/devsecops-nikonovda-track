@@ -1,17 +1,47 @@
-GitHub repository
+# CI/CD Pipeline
+## Общая схема
 
-GitHub Actions
+GitHub → GitHub Actions → Security Checks → Reports → DefectDojo (VPS)
 
-Build / Docker Compose
 
-Security:
-	Semgrep - SAST
-	Gitleaks - secrets scan
-	Trivy - 
-	OWASP ZAP - DAST
+## GitHub Actions
 
-Reports to DefectDojo
+Описание workflow:
 
-Security Gateway
+Файл:
+.github/workflows/security-pipeline.yml
 
-Deploy to VPS
+
+Триггер:
+push в main
+
+
+## Этапы pipeline
+### 1. Code
+
+Получение исходного кода из GitHub репозитория для дальнейшего выполнения проверок.
+
+
+### 2. Gitleaks
+
+Поиск секретов.
+
+
+### 3. Semgrep
+
+SAST анализ.
+
+
+### 4. Trivy
+
+Проверка зависимостей, файловой системы и Docker-образов.
+
+
+### 5. OWASP ZAP
+
+Динамический анализ запущенного веб-приложения (DAST).
+
+
+## Deployment
+
+Развертывание DefectDojo через Docker Compose на VPS.

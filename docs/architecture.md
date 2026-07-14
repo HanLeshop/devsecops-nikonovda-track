@@ -2,7 +2,7 @@
 
 ## Project
 
-Взят за основу Defect Dojo
+Взят за основу DefectDojo
 DefectDojo - это бесплатная платформа для управления уязвимостями (класса ASPM) с открытым исходным кодом. (https://github.com/DefectDojo/django-DefectDojo)
 Обзор инструмента DefectDojo: почему его выбирают? (https://habr.com/ru/companies/swordfish_security/articles/808615/)
 

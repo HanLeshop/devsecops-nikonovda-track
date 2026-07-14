@@ -53,3 +53,17 @@ Step 5 — Trivy Image Scan
 - • 5.4 Создан Test типа Trivy Scan в DefectDojo.
 - • 5.5 Отчет Trivy Image успешно импортирован.
 - • 5.6 Проверено отображение найденных уязвимостей контейнера в DefectDojo.
+
+
+Step 6 — VPS Deployment
+
+- • 6.1 Получен VPS для развертывания.
+- • 6.2 Развернут DefectDojo через Docker Compose.
+- • 6.3 Выполнен запуск сервисов DefectDojo.
+- • 6.4 Проверена доступность веб-интерфейса.
+
+
+Step 7 — DefectDojo Import
+- • 7.1 Импортированы результаты Semgrep.
+- • 7.2 Импортированы результаты Trivy.
+- • 7.3 Импортированы результаты OWASP ZAP.
