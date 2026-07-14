@@ -18,7 +18,8 @@ pipx install semgrep
 
 Запуск анализа:
 
-```semgrep scan \
+```bash
+semgrep scan \
   --config p/ci \
   .
 ```
