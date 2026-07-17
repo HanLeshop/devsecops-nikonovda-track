@@ -17,15 +17,22 @@
 - [Проверка подключения к GitHub по SSH](../screenshots/step-0/test-git-connect.JPG)
 
 
-Step 1 — Запуск DefectDojo
+### Step 1 — Запуск DefectDojo
 - • 1.1 Проверены Docker и Docker Compose.
 - • 1.2 Проверено отсутствие запущенных контейнеров.
 - • 1.3 Проверены свободные порты `8080`, `8443`, `5432`, `6379`.
 - • 1.4 Выполнен запуск DefectDojo через `docker compose up`.
 - • 1.5 Проверены запущенные сервисы командой `docker compose ps`.
-- • 1.6 Получен пароль администратора из логов `initializer`.
+- • 1.6 Получен пароль администратора из логов `initializer`. (Пароль использовался для первого входа, после чего был заменен на личный.)
 - • 1.7 Выполнен вход в веб-интерфейс DefectDojo по адресу `http://localhost:8080`.
 
+### Скриншоты выполнения 1
+- [Проверка Docker и Docker Compose](../screenshots/step-1/docker_version.JPG)
+- [Проверка свободных портов](../screenshots/step-1/ports.JPG)
+- [Запуск DefectDojo через Docker Compose](../screenshots/step-1/docker up.JPG)
+- [Проверка запущенных сервисов DefectDojo](../screenshots/step-1/docker ps.JPG)
+- [Проверка логов контейнера initializer](../screenshots/step-1/initializer pass.JPG)
+- [Успешный вход в веб-интерфейс DefectDojo](../screenshots/step-1/DefectDojo_localhost8080.JPG)
 
 Step 2 — SAST и импорт в DefectDojo
 - • 2.1 Установлен Semgrep через `pipx`.
