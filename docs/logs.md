@@ -25,6 +25,8 @@
 - • 1.5 Проверены запущенные сервисы командой `docker compose ps`.
 - • 1.6 Получен пароль администратора из логов `initializer`. (Пароль использовался для первого входа, после чего был заменен на личный.)
 - • 1.7 Выполнен вход в веб-интерфейс DefectDojo по адресу `http://localhost:8080`.
+- • 1.8 Создан Asset для хранения результатов
+- • 1.9 Создан Engagement для объединения результатов
 
 ### Скриншоты выполнения 1
 - [Docker и Docker Compose](../screenshots/step-1/docker-version.JPG)
@@ -33,7 +35,8 @@
 - [Проверка сервисов DefectDojo](../screenshots/step-1/docker-compose-ps.JPG)
 - [Проверка логов initializer](../screenshots/step-1/initializer-pass.JPG)
 - [Вход в веб-интерфейс DefectDojo](../screenshots/step-1/defectdojo-localhost8080.JPG)
-
+- [Создание asset](../screenshots/step-1/add-asset-defectdojo.JPG), [Asset done](../screenshots/step-1/add-asset-defectdojo-done.JPG)
+- [Создание Engagement](../screenshots/step-1/add-engagements-defectdojo.JPG), [Engagement done](../screenshots/step-1/engagements-done.JPG)
 
 Step 2 — SAST и импорт в DefectDojo
 - • 2.1 Установлен Semgrep через `pipx`.
