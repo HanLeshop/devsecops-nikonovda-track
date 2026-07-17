@@ -8,7 +8,7 @@
 - • 0.7 Подключен удаленный origin.
 - • 0.8 Основная ветка переименована в main.
 
-### Скриншоты выполнения
+### Step 0 -  Скриншоты выполнения
 - [Создание GitHub-репозитория](../screenshots/step-0/git.JPG)
 - [Настройка GitHub (основная ветка)](../screenshots/step-0/git-settings.JPG)
 - [Создание SSH-ключа ED25519](../screenshots/step-0/ssh.JPG)
