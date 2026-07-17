@@ -8,6 +8,14 @@ Step 0 — Подготовка окружения
 - • 0.7 Подключен удаленный origin.
 - • 0.8 Основная ветка переименована в main.
 
+### Скриншоты выполнения
+- [Создание GitHub-репозитория](../screenshots/step-0/git.JPG)
+- [Настройка GitHub (основная ветка)](../screenshots/step-0/git-settings.JPG)
+- [Создание SSH-ключа ED25519](../screenshots/step-0/ssh.JPG)
+- [Добавление SSH-ключа в GitHub](../screenshots/step-0/git-settings-ssh.JPG)
+- [Настройка Git и подключение удаленного репозитория](../screenshots/step-0/connect-git.JPG)
+- [Проверка подключения к GitHub по SSH](../screenshots/step-0/test-git-connect.JPG)
+
 
 Step 1 — Запуск DefectDojo
 - • 1.1 Проверены Docker и Docker Compose.
