@@ -27,12 +27,13 @@
 - • 1.7 Выполнен вход в веб-интерфейс DefectDojo по адресу `http://localhost:8080`.
 
 ### Скриншоты выполнения 1
-- [Проверка Docker и Docker Compose](../screenshots/step-1/docker_version.JPG)
-- [Проверка свободных портов](../screenshots/step-1/ports.JPG)
-- [Запуск DefectDojo через Docker Compose](../screenshots/step-1/docker up.JPG)
-- [Проверка запущенных сервисов DefectDojo](../screenshots/step-1/docker ps.JPG)
-- [Проверка логов контейнера initializer](../screenshots/step-1/initializer pass.JPG)
-- [Успешный вход в веб-интерфейс DefectDojo](../screenshots/step-1/DefectDojo_localhost8080.JPG)
+- [Docker и Docker Compose](../screenshots/step-1/docker-version.JPG)
+- [Проверка портов](../screenshots/step-1/ports.JPG)
+- [Запуск DefectDojo через Docker Compose](../screenshots/step-1/docker-compose-up.JPG)
+- [Проверка сервисов DefectDojo](../screenshots/step-1/docker-compose-ps.JPG)
+- [Проверка логов initializer](../screenshots/step-1/initializer-pass.JPG)
+- [Вход в веб-интерфейс DefectDojo](../screenshots/step-1/defectdojo-localhost8080.JPG)
+
 
 Step 2 — SAST и импорт в DefectDojo
 - • 2.1 Установлен Semgrep через `pipx`.
