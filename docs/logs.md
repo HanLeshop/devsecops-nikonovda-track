@@ -38,6 +38,7 @@
 - [Создание asset](../screenshots/step-1/add-asset-defectdojo.JPG), [Asset done](../screenshots/step-1/add-asset-defectdojo-done.JPG)
 - [Создание Engagement](../screenshots/step-1/add-engagements-defectdojo.JPG), [Engagement done](../screenshots/step-1/engagements-done.JPG)
 
+
 Step 2 — SAST и импорт в DefectDojo
 - • 2.1 Установлен Semgrep через `pipx`.
 - • 2.2 Выполнено тестовое сканирование проекта DefectDojo.
@@ -45,6 +46,14 @@ Step 2 — SAST и импорт в DefectDojo
 - • 2.4 После исключения директории `unittests` результат сократился до 44 findings.
 - • 2.5 Отчет Semgrep успешно импортирован в DefectDojo.
 - • 2.6 Проверено, что после перезапуска Docker Compose данные DefectDojo сохранились.
+
+### Скриншоты выполнения 2
+- [Установка Semgrep](../screenshots/step-2/semgrep-install.JPG)
+- [Первичное сканирование проекта DefectDojo - 991 findings](../screenshots/step-2/semgrep-scan-991.JPG)
+- [Повторное сканирование после исключения директории unittests - 44 findings](../screenshots/step-2/semgrep-scan-44.JPG)
+- [Формирование JSON-отчета Semgrep](../screenshots/step-2/semgrep-scan-to-json.JPG)
+- [Импорт отчета Semgrep в DefectDojo](../screenshots/step-2/test_semgrep.JPG)
+- [Проверка сохранения данных после перезапуска Docker Compose](../screenshots/step-2/report_semgrep.png)
 
 
 Step 3 — GitHub Actions
