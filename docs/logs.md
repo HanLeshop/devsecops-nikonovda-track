@@ -77,6 +77,10 @@ Step 4 — Trivy Filesystem и DefectDojo
 - • 4.4 Отчет Trivy Filesystem успешно импортирован.
 - • 4.5 Проверено отображение найденных уязвимостей в DefectDojo.
 
+### Скриншоты выполнения 4
+- [Trivy fs scan и import JSON](../screenshots/step-4/scan-fs-import-json.JPG)
+- [Импорт Trivy fs scan в DefectDojo](../screenshots/step-4/trivy-scan-fs-defectdojo.JPG)
+- [Сформированный отчет в DefectDojo](../screenshots/step-4/scan-fs-defectdojo-done.JPG)
 
 Step 5 — Trivy Image Scan
 - • 5.1 Выполнено сканирование Docker-образа DefectDojo.
