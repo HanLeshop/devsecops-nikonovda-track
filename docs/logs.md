@@ -61,9 +61,13 @@ Step 3 — GitHub Actions
 - • 3.2 Настроен автоматический запуск pipeline при push в ветку `main`.
 - • 3.3 В pipeline добавлены проверки Gitleaks, Semgrep и Trivy.
 - • 3.4 Выполнен первый тестовый запуск GitHub Actions.
-- • 3.5 Обнаружена проблема с `semgrep-action`.
-- • 3.6 Semgrep заменен на установку через `pip` и запуск через CLI.
-- • 3.7 Повторный запуск GitHub Actions завершился успешно.
+- • 3.5 Проверено успешное выполнение GitHub Actions.
+
+### Скриншоты выполнения 3
+- [Создание workflow security-pipeline.yml](../screenshots/step-3/workflows.JPG)
+- [Настройка Gitleaks, Semgrep и Trivy](../screenshots/step-3/security-pipeline.JPG)
+- [История запусков GitHub Actions](../screenshots/step-3/actions.JPG)
+- [Первые успешные запуски GitHub Actions](../screenshots/step-3/first-actions.JPG)
 
 
 Step 4 — Trivy Filesystem и DefectDojo
