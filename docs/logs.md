@@ -91,7 +91,6 @@ Step 5 — Trivy Image Scan
 - • 5.6 Проверено отображение найденных уязвимостей контейнера в DefectDojo.
 
 ### Скриншоты выполнения 5
-
 - [Trivy image scan и import JSON](../screenshots/step-5/scan-image-import-json.JPG)
 - [Импорт Trivy Image Scan в DefectDojo](../screenshots/step-5/trivy-scan-image-defectdojo.JPG)
 - [Сформированный отчет в DefectDojo](../screenshots/step-5/scan-image-defectdojo-done.JPG)
@@ -103,6 +102,11 @@ Step 6 — VPS Deployment
 - • 6.2 Развернут DefectDojo через Docker Compose.
 - • 6.3 Выполнен запуск сервисов DefectDojo.
 - • 6.4 Проверена доступность веб-интерфейса.
+
+### Скриншоты выполнения 6
+- [Подключение к VPS по SSH](../screenshots/step-6/ssh-connect.JPG)
+- [Запущенные контейнеры DefectDojo на VPS](../screenshots/step-6/docker-ps-to-vps.JPG)
+- [Веб-интерфейс DefectDojo на VPS](../screenshots/step-6/defectdojo-to-vps.JPG)
 
 
 Step 7 — DefectDojo Import
