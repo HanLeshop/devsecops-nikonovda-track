@@ -90,6 +90,12 @@ Step 5 — Trivy Image Scan
 - • 5.5 Отчет Trivy Image успешно импортирован.
 - • 5.6 Проверено отображение найденных уязвимостей контейнера в DefectDojo.
 
+### Скриншоты выполнения 5
+
+- [Trivy image scan и import JSON](../screenshots/step-5/scan-image-import-json.JPG)
+- [Импорт Trivy Image Scan в DefectDojo](../screenshots/step-5/trivy-scan-image-defectdojo.JPG)
+- [Сформированный отчет в DefectDojo](../screenshots/step-5/scan-image-defectdojo-done.JPG)
+
 
 Step 6 — VPS Deployment
 
