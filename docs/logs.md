@@ -113,3 +113,7 @@ Step 7 — DefectDojo Import
 - • 7.1 Импортированы результаты Semgrep.
 - • 7.2 Импортированы результаты Trivy.
 - • 7.3 Импортированы результаты OWASP ZAP.
+
+### Скриншоты выполнения 7
+- [Импорт результатов сканирования в DefectDojo](../screenshots/step-7/reports-defectdojo.JPG)
+- [История импорта отчета в DefectDojo](../screenshots/step-7/import-reports.JPG)
